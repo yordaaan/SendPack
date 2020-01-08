@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="570dp"
+        android:background="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nama_kirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pengirim"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/txt_namakirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/nama_kirim"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:ems="13"
+                    />
+
+                <TextView
+                    android:id="@+id/alamat_kirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Pengirim"
+                    android:layout_below="@id/txt_namakirim"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="30dp"
+                    />
+                <EditText
+                    android:id="@+id/txt_alamatkirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alamat_kirim"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:ems="11"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/txt_alamatkirim"
+                    android:src="@mipmap/loc_icon"
+                    android:layout_below="@id/txt_namakirim"
+                    android:layout_marginTop="30dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/hp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Hp"
+                    android:layout_below="@id/txt_alamatkirim"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="30dp"
+                    />
+                <EditText
+                    android:id="@+id/txthp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:ems="13"
+                    />
+
+                               <View
+                                   android:id="@+id/garis1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txthp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/nama_terima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Penerima"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:layout_below="@id/garis1"
+                    />
+
+                <EditText
+                    android:id="@+id/txt_namaterima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/nama_terima"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:ems="13"
+                    />
+
+                <TextView
+                    android:id="@+id/alamat_terima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Penerima"
+                    android:layout_below="@id/txt_namaterima"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="30dp"
+                    />
+                <EditText
+                    android:id="@+id/txt_alamatterima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alamat_terima"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:ems="11"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/txt_alamatterima"
+                    android:src="@mipmap/loc_icon"
+                    android:layout_below="@id/txt_namaterima"
+                    android:layout_marginTop="30dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/hp_terima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Hp"
+                    android:layout_below="@id/txt_alamatterima"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="30dp"
+                    />
+                <EditText
+                    android:id="@+id/txthp_terima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hp_terima"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:ems="13"
+                    />
+
+                <View
+                    android:id="@+id/garis2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txthp_terima"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/jenis_paket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Paket"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:layout_below="@id/garis2"
+                    />
+
+                <Spinner
+                    android:id="@+id/sp_jenispaket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jenis_paket"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:ems="13"
+                    android:entries="@array/jenis_paket"
+                    />
+
+                <TextView
+                    android:id="@+id/detail_paket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Paket"
+                    android:layout_below="@id/sp_jenispaket"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+
+                    android:layout_marginTop="30dp"
+                    />
+                <EditText
+                    android:id="@+id/txt_detailpaket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detail_paket"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:ems="13"
+                    />
+
+                <TextView
+                    android:id="@+id/jumlah_koli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Koli"
+                    android:layout_below="@id/txt_detailpaket"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+
+                    android:layout_marginTop="30dp"
+                    />
+                <EditText
+                    android:id="@+id/txt_jumlahkoli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jumlah_koli"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:ems="13"
+                    />
+
+
+                <TextView
+                    android:id="@+id/kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berat Paket (Kg)"
+                    android:layout_below="@id/txt_jumlahkoli"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="30dp"
+                    />
+                <EditText
+                    android:id="@+id/txt_kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kg"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:ems="13"
+                    />
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="650dp"
+        android:layout_centerHorizontal="true"
+        android:text="Selesai"
+        android:onClick="selesai_paket"
+        />
+</RelativeLayout>

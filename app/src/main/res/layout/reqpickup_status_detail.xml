@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="570dp"
+        android:background="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/no_kirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="No Pengiriman"
+                    android:textColor="#000"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tgl_kirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Tgl Pengiriman"
+                    android:textColor="#000"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/txt_nokirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/no_kirim"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="7"
+                    android:textColor="#000"
+                    android:lines="1"></EditText>
+
+                <EditText
+                    android:id="@+id/txt_tglkirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tgl_kirim"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:ems="7"
+                    android:textColor="#000"
+                    android:lines="1"></EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txt_nokirim"
+                    android:background="@color/colorPrimary" />
+
+
+                <TextView
+                    android:id="@+id/pengirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_nokirim"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Pengirim"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/nama_kirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/pengirim"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Nama Pengirim"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_namakirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nama_kirim"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="7"
+                    android:textColor="#000"
+                    android:lines="1"></EditText>
+
+                <TextView
+                    android:id="@+id/alamat_kirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txt_namakirim"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Alamat Pengirim"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_alamatkirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alamat_kirim"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <TextView
+                    android:id="@+id/lokasi_kirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/pengirim"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="60dp"
+                    android:text="Detail Lokasi"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_lokasikirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lokasi_kirim"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <TextView
+                    android:id="@+id/hp_kirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txt_lokasikirim"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="100dp"
+                    android:text="No Hp"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_hpkirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hp_kirim"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <View
+                    android:id="@+id/garis2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txt_hpkirim"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/penerima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/garis2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Penerima"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/nama_terima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/penerima"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Nama Penerima"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_namaterima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nama_terima"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <TextView
+                    android:id="@+id/alamat_terima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txt_namaterima"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Alamat Penerima"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_alamatterima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alamat_terima"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <TextView
+                    android:id="@+id/lokasi_terima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/penerima"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="60dp"
+                    android:text="Detail Lokasi"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_lokasiterima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lokasi_terima"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <TextView
+                    android:id="@+id/hp_terima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txt_lokasiterima"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="100dp"
+                    android:text="No Hp"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_hpterima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hp_terima"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <View
+                    android:id="@+id/garis3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txt_hpterima"
+                    android:background="@color/colorPrimary" />
+
+
+                <TextView
+                    android:id="@+id/kurir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/garis3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Kurir"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/nama_kurir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/kurir"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Nama Kurir"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_namakurir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nama_kurir"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <TextView
+                    android:id="@+id/no_kurir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txt_namakurir"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="No Kurir"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_nokurir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/no_kurir"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <TextView
+                    android:id="@+id/hp_kurir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txt_nokurir"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="No Hp"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_hpkurir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hp_kurir"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@mipmap/login_icon"
+                    android:layout_below="@id/garis3"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="50dp"/>
+
+                <View
+                    android:id="@+id/garis4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txt_hpkurir"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/paket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/garis4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Paket"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/tipe_paket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/paket"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Jenis Paket"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_tipepaket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tipe_paket"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <TextView
+                    android:id="@+id/jumlah_koli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txt_tipepaket"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Jumlah Koli"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_jumlahkoli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jumlah_koli"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <TextView
+                    android:id="@+id/lokasi_paket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/paket"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="60dp"
+                    android:text="Detail Lokasi"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_lokasipaket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lokasi_paket"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <TextView
+                    android:id="@+id/berat_paket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txt_lokasipaket"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Berat Paket (Kg)"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_beratpaket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/berat_paket"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <View
+                    android:id="@+id/garis5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/txt_beratpaket"
+                    android:background="@color/colorPrimary" />
+
+
+                <TextView
+                    android:id="@+id/total_harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/garis5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Harga"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_totalharga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/total_harga"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/garis5"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Status"
+                    android:textColor="#000"
+                    android:textSize="16dp"></TextView>
+
+                <EditText
+                    android:id="@+id/txt_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/status"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:ems="7"
+                    android:textColor="#000"></EditText>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="650dp"
+        android:layout_centerHorizontal="true"
+        android:text="Selesai"
+        android:onClick="details_pickup_done"
+        />
+</RelativeLayout>

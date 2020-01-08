@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="570dp"
+        android:background="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/reg_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/font"
+            />
+
+        <EditText
+            android:id="@+id/txtreg_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/reg_uname"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:ems="13"
+            />
+
+        <TextView
+            android:id="@+id/reg_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_below="@id/txtreg_uname"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/font"
+            />
+        <EditText
+            android:id="@+id/txtreg_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_pass"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:ems="13"
+            android:inputType="textPassword"
+            />
+
+
+
+        <TextView
+            android:id="@+id/reg_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_below="@id/txtreg_pass"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/font"
+            />
+        <EditText
+            android:id="@+id/txtreg_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_email"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:ems="13"
+            />
+
+        <TextView
+            android:id="@+id/reg_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:layout_below="@id/txtreg_email"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/font"
+
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/txtreg_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_city"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:ems="13"
+            />
+
+        <TextView
+            android:id="@+id/reg_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:layout_below="@id/txtreg_city"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/font"
+            />
+        <EditText
+            android:id="@+id/txtreg_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_phone"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:ems="13"
+            />
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtreg_phone"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="Save"
+            android:textSize="15dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

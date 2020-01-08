@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+<RelativeLayout
+    android:layout_width="350dp"
+    android:layout_height="570dp"
+    android:background="#ffff"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="80dp">
+
+    <TextView
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+        android:textColor="@color/font"
+
+            />
+
+        <EditText
+            android:id="@+id/txtuname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/uname"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:ems="15"
+            />
+
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+           android:layout_below="@id/txtuname"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/font"
+            />
+
+        <EditText
+            android:id="@+id/txtpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pass"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:ems="15"
+            android:inputType="textPassword"
+            />
+          <CheckBox
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+              android:layout_alignParentLeft="true"
+        android:id="@+id/showPass"
+        android:layout_below="@id/txtpass"
+              android:layout_marginTop="10dp"
+        android:text="Show Password" />
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/showPass"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="Sign In"
+            android:textSize="15dp"
+            android:onClick="klik_signin"
+            />
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun?"
+            android:layout_below="@id/btnSignIn"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="90dp"
+            android:textSize="15dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/font"
+            />
+    <TextView
+        android:id="@+id/txsignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Sign Up"
+        android:layout_toEndOf="@id/signUp"
+        android:layout_below="@id/btnSignIn"
+        android:textSize="15dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/font"
+        />
+
+</RelativeLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/login_icon"
+
+        />
+
+</RelativeLayout>
