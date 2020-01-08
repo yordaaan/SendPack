@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">SendPack</string>
+    <string-array name="jenis_paket">
+        <item>Dokumen</item>
+        <item>Makanan</item>
+        <item>Scheider</item>
+        <item>Jäger</item>
+        <item>Müller</item>
+        <item>Schulz</item>
+        <item>Neumann</item>
+        <item>Schwarz</item>
+        <item>Lange</item>
+        <item>Köhler</item>
+        <item>Schumacher</item>
+    </string-array>
+    <string name="really_long_string1">Catat bahwa sebuah ScrollView hanya bisa memiliki satu elemen anak jadi, jika menginginkan beberapa elemen sekaligus agar dapat di scroll, bungkus elemen-elemen tersebut menggunakan ViewGroup (RelativeLayout, LinearLayout, atau yang lain).
+
+Dalam beberapa situasi, kita ingin agar ada suatu konten dibagian bawah area yang di scroll. Misalnya kita ingin ada sebuah "term of service" dimana hanya bisa di accept apabila sudah melakukan scroll seluruh konten. Dalam kasus ini, anda mungkin memerlukan properti android:fillViewport menjadi "true". Baca artikel oleh Romain Guy berikut untuk penggunaan yang lebih detail untuk kasus ini.
+
+Scrollable TextView
+Catat bahwa sebuah TextView tidak memerlukan ScrollView jika hanya ingin agar teks didalamnya daia di scroll. Cukup gunakan properti scrollbars dan menentukan nilainya:</string>
+    <string name="really_long_string2">Catat bahwa sebuah ScrollView hanya bisa memiliki satu elemen anak jadi, jika menginginkan beberapa elemen sekaligus agar dapat di scroll, bungkus elemen-elemen tersebut menggunakan ViewGroup (RelativeLayout, LinearLayout, atau yang lain).
+
+Dalam beberapa situasi, kita ingin agar ada suatu konten dibagian bawah area yang di scroll. Misalnya kita ingin ada sebuah "term of service" dimana hanya bisa di accept apabila sudah melakukan scroll seluruh konten. Dalam kasus ini, anda mungkin memerlukan properti android:fillViewport menjadi "true". Baca artikel oleh Romain Guy berikut untuk penggunaan yang lebih detail untuk kasus ini.
+
+Scrollable TextView
+Catat bahwa sebuah TextView tidak memerlukan ScrollView jika hanya ingin agar teks didalamnya daia di scroll. Cukup gunakan properti scrollbars dan menentukan nilainya:</string>
+    <string name="really_long_string3">Catat bahwa sebuah ScrollView hanya bisa memiliki satu elemen anak jadi, jika menginginkan beberapa elemen sekaligus agar dapat di scroll, bungkus elemen-elemen tersebut menggunakan ViewGroup (RelativeLayout, LinearLayout, atau yang lain).
+
+Dalam beberapa situasi, kita ingin agar ada suatu konten dibagian bawah area yang di scroll. Misalnya kita ingin ada sebuah "term of service" dimana hanya bisa di accept apabila sudah melakukan scroll seluruh konten. Dalam kasus ini, anda mungkin memerlukan properti android:fillViewport menjadi "true". Baca artikel oleh Romain Guy berikut untuk penggunaan yang lebih detail untuk kasus ini.
+
+Scrollable TextView
+Catat bahwa sebuah TextView tidak memerlukan ScrollView jika hanya ingin agar teks didalamnya daia di scroll. Cukup gunakan properti scrollbars dan menentukan nilainya:</string>
+    <string name="really_long_string4">Catat bahwa sebuah ScrollView hanya bisa memiliki satu elemen anak jadi, jika menginginkan beberapa elemen sekaligus agar dapat di scroll, bungkus elemen-elemen tersebut menggunakan ViewGroup (RelativeLayout, LinearLayout, atau yang lain).
+
+Dalam beberapa situasi, kita ingin agar ada suatu konten dibagian bawah area yang di scroll. Misalnya kita ingin ada sebuah "term of service" dimana hanya bisa di accept apabila sudah melakukan scroll seluruh konten. Dalam kasus ini, anda mungkin memerlukan properti android:fillViewport menjadi "true". Baca artikel oleh Romain Guy berikut untuk penggunaan yang lebih detail untuk kasus ini.
+
+Scrollable TextView
+Catat bahwa sebuah TextView tidak memerlukan ScrollView jika hanya ingin agar teks didalamnya daia di scroll. Cukup gunakan properti scrollbars dan menentukan nilainya:</string>
+    <string name="really_long_string5">Catat bahwa sebuah ScrollView hanya bisa memiliki satu elemen anak jadi, jika menginginkan beberapa elemen sekaligus agar dapat di scroll, bungkus elemen-elemen tersebut menggunakan ViewGroup (RelativeLayout, LinearLayout, atau yang lain).
+
+Dalam beberapa situasi, kita ingin agar ada suatu konten dibagian bawah area yang di scroll. Misalnya kita ingin ada sebuah "term of service" dimana hanya bisa di accept apabila sudah melakukan scroll seluruh konten. Dalam kasus ini, anda mungkin memerlukan properti android:fillViewport menjadi "true". Baca artikel oleh Romain Guy berikut untuk penggunaan yang lebih detail untuk kasus ini.
+
+Scrollable TextView
+Catat bahwa sebuah TextView tidak memerlukan ScrollView jika hanya ingin agar teks didalamnya daia di scroll. Cukup gunakan properti scrollbars dan menentukan nilainya:</string>
+</resources>

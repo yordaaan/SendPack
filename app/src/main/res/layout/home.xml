@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SendPack"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        />
+    <ImageView
+        android:id="@+id/req_pickup"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pa"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        />
+    <ImageView
+        android:id="@+id/status_pick"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/track_shipment_512"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/req_pickup"
+        />
+    <ImageView
+        android:id="@+id/edit_prof"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user_edit_profile_account_people_1_57626"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/status_pick"
+        />
+    <ImageView
+        android:id="@+id/help"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/question61671"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/edit_prof"
+        />
+
+   <Button
+       android:id="@+id/btnReq"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Request Pickup"
+       android:layout_toEndOf="@id/req_pickup"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="180dp"
+       android:layout_marginLeft="50dp"
+       android:onClick="klik_reqpick"/>
+
+    <Button
+        android:id="@+id/btnStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Pickup"
+        android:layout_toEndOf="@id/status_pick"
+        android:layout_below="@id/btnReq"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="50dp"
+        android:onClick="klik_statpick"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_toEndOf="@id/edit_prof"
+        android:layout_below="@id/btnStatus"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="50dp"
+        android:onClick="klik_edprof"/>
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEdit"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="90dp"
+        android:layout_toEndOf="@id/help"
+        android:onClick="klik_help"
+        android:text="Help" />
+
+</RelativeLayout>

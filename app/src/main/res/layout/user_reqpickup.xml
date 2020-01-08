@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SendPack Request"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="510dp"
+        android:background="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/detail_pengirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Pengirim"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:id="@+id/btn_detailpengirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_pengirim"
+            android:layout_centerHorizontal="true"
+            android:ems="13"
+            android:text="Pengirim"
+            android:onClick="det_pengirim"
+            />
+
+        <TextView
+            android:id="@+id/detail_penerima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Penerima"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_detailpengirim"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:id="@+id/btn_detailpenerima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_penerima"
+            android:layout_centerHorizontal="true"
+            android:ems="13"
+            android:text="Penerima"
+            android:onClick="det_penerima"
+            />
+
+        <TextView
+            android:id="@+id/detail_paket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Paket"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_detailpenerima"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:id="@+id/btn_detailpaket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_paket"
+            android:layout_centerHorizontal="true"
+            android:ems="13"
+            android:text="Paket"
+            android:onClick="det_paket"
+            />
+
+        <TextView
+            android:id="@+id/total_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Harga"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_detailpaket"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:id="@+id/txt_totalharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_harga"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:textColor="#000"
+            />
+
+
+        <Button
+            android:id="@+id/btnKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_totalharga"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="80dp"
+            android:text="Kembali"
+            android:textSize="15dp"
+            />
+
+        <Button
+            android:id="@+id/btnReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_totalharga"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:text="Request"
+            android:textSize="15dp"
+            android:onClick="done_req"
+            />
+    </RelativeLayout>
+</RelativeLayout>

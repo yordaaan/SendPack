@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SendPack Request"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:background="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/nama_terima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Penerima"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/txt_namaterima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/nama_terima"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:ems="13"
+            />
+
+        <TextView
+            android:id="@+id/alamat_terima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Penerima"
+            android:layout_below="@id/txt_namaterima"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/txt_alamatterima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alamat_terima"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:ems="11"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/txt_alamatterima"
+            android:src="@mipmap/loc_icon"
+            android:layout_below="@id/txt_namaterima"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/detail_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Lokasi"
+            android:layout_below="@id/txt_alamatterima"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/txt_detaillokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_lokasi"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:ems="13"
+            />
+
+
+        <TextView
+            android:id="@+id/hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Hp"
+            android:layout_below="@id/txt_detaillokasi"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/txthp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:ems="13"
+            />
+
+
+        <Button
+            android:id="@+id/btnSelesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txthp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="Selesai"
+            android:textSize="15dp"
+            android:onClick="done_penerima"
+            />
+    </RelativeLayout>
+</RelativeLayout>
